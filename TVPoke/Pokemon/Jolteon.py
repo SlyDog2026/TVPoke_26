@@ -8,6 +8,6 @@ class Jolteon(Electric):
             Move("Literal Joke Move", "NORMAL", 0),
             Move("Quick Attack", "NORMAL", 50),
             Move("Pound", "NORMAL", 40),
-            Move("Charm", "NORMAL", 25),
+            
         ]
         super().__init__("Jolteon",140, moves,  "./TVPoke/Pokemon/imgs/Jolteon.png")
