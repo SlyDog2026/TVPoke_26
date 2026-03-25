@@ -14,16 +14,22 @@ class BattleScreen(Screen):
         
     def elementsToDisplay(self):
         self.elements = []
+        #place the active trainers first pokemon
+        poke = self.trainers[0].pokemon[0]
+        x = 30
+        y = 50
+        self.elements.append(Image(x, y), 20, 20, poke.img)
 
-        y = 0
-        #two rows of three
-        for trainer in self.trainers:
-            x = 0
-            y += 100/3
-            for poke in trainer.pokemon:
-                x += 100/4
-                self.elements.append(Image((x, y), 20, 20, poke.img))
-                self.elements.append(Label((x, y + 10), 20, 10, poke.name))
+
+        # y = 0
+        # #two rows of three
+        # for trainer in self.trainers:
+        #     x = 0
+        #     y += 100/3
+        #     for poke in trainer.pokemon:
+        #         x += 100/4
+        #         self.elements.append(Image((x, y), 20, 20, poke.img))
+        #         self.elements.append(Label((x, y + 10), 20, 10, poke.name))
                 
 
 
