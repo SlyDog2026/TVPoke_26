@@ -36,12 +36,12 @@ class BattleScreen(Screen):
     def elementsToDisplay(self):
         self.elements = [
             Label((50, 90), 20, 10, ''),
-            ActiveIndicator((10, 90), 25, 5, 'Active Trainer: '+str(self.trainers[0].myId), 13, (255, 255, 255), (235, 64, 52)),
-            Image((50, 75), 20, 20, './imgs/vs.png'),
+            ActiveIndicator((10, 90), 25, 5, 'Active Trainer: '+str(self.trainers[0].myId), 13, (255, 255, 255), (52, 235, 229)),
+            Label((50, 50), 20, 20, 'Powers' , 20),
             Rectangle((90, 5), 18, 4, (222, 227, 82)),
             Rectangle((15, 5), 18, 4, (222, 227, 82)),
-            Label((90, 5), 20, 10, 'Being Attacked'),
-            Label((15, 5), 20, 10, 'Attacker'),
+            Label((89, 5), 20, 10, 'Being Attacked', (15) , (0, 0, 0), (52, 235, 229)),
+            Label((15, 5), 20, 10, 'Attacker', (15) , (0, 0, 0), (52, 235, 229)),
         ]
         positionForPokes = 1
         pokemonID = 0
